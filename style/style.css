@@ -99,17 +99,14 @@ body {
   color:aquamarine;
   font-size: 20px;
   text-transform: uppercase;
-  /* font-style: italic; */
 	font-weight: bold;
-  /* border: 1px #fff solid; */
   border-radius: 5px;
   padding: 5px;
-  /* background-color: #ffffffcc; */
   background-color: #00000099;
+  z-index: 10;
 } 
 
 .parallax {
-  /* filter: grayscale(50%); */
   perspective: 1px;
   height: 450px;
   overflow-y: auto;
@@ -124,19 +121,15 @@ body {
 
 .block__string.parallax-layer {
   transform: translateZ(-2px)  scale(3);
-  /* width: 300px; */
-  /* width: 100%; */
   height: 24px;
   border: none;
-  /* background-color: transparent; */
-  background-color: #00000099;
-  /* background-color: #ffffffcc; */
   padding: 5px;
 }
 
 img {
   height: 600px;
   width: 450px;
+  z-index: 1;
 }
 
 .appear {
@@ -153,10 +146,8 @@ img {
 
 .localization-link {
   position: absolute;
-  right: 10px;
-  /* bottom: 10px; */
-  /* width: 100px; */
-  /* height: 30px; */
+  right: 50%;
+  transform: translateX(50%);
   padding: 10px;
   border: 1px aquamarine solid;
   border-radius: 10px;
@@ -165,4 +156,8 @@ img {
 .button {
   color: aquamarine;
   text-decoration: none;
+}
+
+.empty {
+  height: 50px;
 }
