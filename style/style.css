@@ -1,0 +1,168 @@
+@font-face {
+  font-family: 'Helvetica';
+  src: local('Helvetica'), url('../assets/fonts/Helvetica-Medium.woff2') format('woff2'),
+  url('../assets/fonts/Helvetica-Medium.woff') format('woff');
+	font-style: normal;
+	font-weight: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Helvetica';
+  src: local('Helvetica'), url('../assets/fonts/Helvetica-Bold.woff2') format('woff2'),
+  url('../assets/fonts/Helvetica-Bold.woff') format('woff');
+	font-style: normal;
+	font-weight: bold;
+  font-display: swap;
+}
+
+/*Убрать полосу прокрутки у элемента*/
+.element::-webkit-scrollbar {
+  width: 0;
+}
+
+/*Убрать полосу прокрутки для всей страницы*/
+::-webkit-scrollbar {
+  width: 0;
+}
+
+.hidden {
+  opacity: 0;
+}
+
+html {
+  font-family: 'Helvetica';
+  font-size: 16px;
+  font-weight: bold;
+}
+
+body {
+  display: flex;
+  justify-content: center; 
+  box-sizing: border-box;
+	margin: 0;
+	padding: 0; 
+}
+
+.main-wrapper {
+  position: relative;
+  width: 420px;
+  padding-bottom: 10px;
+}
+
+.block {
+  height: 510px;
+  position: relative;
+  background-size: 100%;
+  padding: 10px 10px 0 10px;
+  margin-bottom: 15px;
+}
+
+.block_1 {
+  background-image: url("../assets/images/img_001.jpg");
+}
+/* .block_2 {
+  background-image: url("../assets/images/img_002.jpg");
+} */
+.block_3 {
+  background-image: url("../assets/images/img_003.jpg");
+}
+/* .block_4 {
+  background-image: url("../assets/images/img_004.jpg");
+} */
+.block_5 {
+  background-image: url("../assets/images/img_005.jpg");
+}
+/* .block_6 {
+  background-image: url("../assets/images/img_006.jpg");
+} */
+.block_7 {
+  background-image: url("../assets/images/img_007.jpg");
+}
+/* .block_8 {
+  background-image: url("../assets/images/img_008.jpg");
+} */
+.block_9 {
+  background-image: url("../assets/images/img_009.jpg");
+}
+/* .block_10 {
+  background-image: url("../assets/images/img_010.jpg");
+} */
+.block_11 {
+  background-image: url("../assets/images/img_011.jpg");
+}
+/* .block_12 {
+  background-image: url("../assets/images/img_012.jpg");
+} */
+
+.block__string {
+  position: absolute;
+  color:aquamarine;
+  font-size: 20px;
+  text-transform: uppercase;
+  /* font-style: italic; */
+	font-weight: bold;
+  /* border: 1px #fff solid; */
+  border-radius: 5px;
+  padding: 5px;
+  /* background-color: #ffffffcc; */
+  background-color: #00000099;
+} 
+
+.parallax {
+  /* filter: grayscale(50%); */
+  perspective: 1px;
+  height: 450px;
+  overflow-y: auto;
+}
+.parallax-layer {
+  position: absolute;
+  inset: 0;;
+}
+.parallax-image {
+  transform: translateZ(0);
+}
+
+.block__string.parallax-layer {
+  transform: translateZ(-2px)  scale(3);
+  /* width: 300px; */
+  /* width: 100%; */
+  height: 24px;
+  border: none;
+  /* background-color: transparent; */
+  background-color: #00000099;
+  /* background-color: #ffffffcc; */
+  padding: 5px;
+}
+
+img {
+  height: 600px;
+  width: 450px;
+}
+
+.appear {
+  animation: text-appear 3s linear;
+}
+@keyframes text-appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.localization-link {
+  position: absolute;
+  right: 10px;
+  /* bottom: 10px; */
+  /* width: 100px; */
+  /* height: 30px; */
+  padding: 10px;
+  border: 1px aquamarine solid;
+  border-radius: 10px;
+}
+
+.button {
+  color: aquamarine;
+  text-decoration: none;
+}
