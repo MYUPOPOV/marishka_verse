@@ -97,7 +97,7 @@ body {
 } 
 
 .appear {
-  animation: text-appear 3s linear;
+  animation: text-appear 5s linear;
 }
 @keyframes text-appear {
   0% {
